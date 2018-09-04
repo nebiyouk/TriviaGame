@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /*--------------- Custom Font --------------*/
+  
+  @font-face {
+    font-family: 'Terrain';
+    src: url('../fonts/TerrainFont/Terrain.otf');
+    src: url('../fonts/TerrainFont/Terrain.woff');
+  }
+  
+  @font-face {
+    font-family: 'Abyssopelagic';
+    src: url('../fonts/abyssopelagic.otf');
+  }
+  
+  @font-face {
+    font-family: 'Magnitude-Light';
+    src: url('../fonts/Magnitude-Light.otf');
+  }
+  
+  /* ----------------------- Background Gradient Pulse ------------- */
+  
+  #gradient {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  /*----------------------------Welcome Page Only----------------------*/
+  
+  .btn-primary {
+    background-color: #98BFA3;
+    border-color: #98BFA3;
+    margin-top: 50px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #6C8773;
+    border-color: #5F7866;
+  }
+  
+  .btn-primary:active:focus {
+    background-color: #41523F;
+    border-color: #334031;
+  }
+  
+  .glyphicon-off {
+    font-size: 30px;
+    margin-top: 6px;
+  }
+  
+  /*---------------------------Main Page----------------------------*/
+  
+  html,
+  body,
+  #wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    padding: 0px;
+    margin: 0px;
+    font-family:'Domine', serif;
+    background-image: url("../images/Background1.jpg");
+  }
+  
+  .jumbotron h1 {
+    font-size: 120px;
+    text-align: center;
+    color: #76947E;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+  }
+  
+  .jumbotron {
+    background-image: url("../images/wellcomeBGR.jpg");
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+    margin-top: 80px;
+    height: 700px;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  /*question*/
+  h3
+  {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    margin-top: 45px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #61302F;
+    margin-bottom: 50px;
+    line-height: 40px;
+  }
+  
+  /*answers*/
+  h4
+  {
+    font-family: 'Domine', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #F8FFFA;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    background-color: rgba(168, 192, 183, 0.6);
+    padding: 5px 0;
+    border-radius: 5px;
+  }
+  .widthh {
+    width: 300px;
+    position:relative;
+    left: 300px;
+  }
+  /*timer*/
+  h5
+  {
+    color: rgb(109, 110, 109);
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    font-family: Abyssopelagic;
+  }
+  
+  .answerImage {
+    max-width: 500px;
+    max-height: 300px;
+    /*center image and limit size*/
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .answers {
+    margin-top: 40px;
+  }
+  
+  /* ------------------Media Queries ------------- */
+  
+  @media only screen and (max-width: 992px) {
+    .jumbotron h1 {
+      font-size: 90px;
+    }
+    .container .jumbotron {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .btn-primary {
+      background-color: #98BFA3;
+      border-color: #98BFA3;
+      margin-top: 100px;
+    }
+    .glyphicon-off {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    .btn-primary {
+      background-color: #98BFA3;
+      margin-top: 20px;
+    }
+    h3/*question*/
+    {
+      font-size: 22px;
+      line-height: 30px;
+    }
+    h5/*timer*/
+    {
+      font-size: 18px;
+    }
+    h4/*answers*/
+    {
+      font-size: 35px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .answerImage {
+      max-width: 400px;
+      max-height: 3000px;/*center image and limit size*/
+      margin: 0 auto;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .jumbotron {
+      margin-top: 20px;
+      max-height: 597px;
+    }
+  
+    .widthh {
+      position:relative;
+      left: 100px;
+    }
+    .jumbotron h1 {
+      font-size: 40px;
+    }
+    
+    h3/*question*/
+    {
+      letter-spacing: 0px;
+      word-spacing: 2px;
+      margin-top: 35px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .glyphicon-off {
+      font-size: 15px;
+      margin-top: 0px;
+    }
+    h5/*timer*/
+    {
+      font-size: 10px;
+    }
+    h4/*answers*/
+    {
+      font-size: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .answerImage {
+      max-width: 250px;
+      /*center image and limit size*/
+      max-height: 250px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
