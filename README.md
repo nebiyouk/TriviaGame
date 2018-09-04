@@ -1,6 +1,6 @@
 # TriviaGame
 <h1>NFL Trivia Game</h1>
-FIFA World Cup themed trivia game
+NFL themed trivia game
 
 <h2>How does it work?</h2>
 
